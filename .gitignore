@@ -103,3 +103,4 @@ ENV/
 #pycharm
 .idea/
 venv
+src/config.ini
