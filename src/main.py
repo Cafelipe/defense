@@ -48,9 +48,10 @@ config = configparser.ConfigParser()
 config.read('config.ini')
 api_id = config["telegramAPI"]['api_id']
 api_hash = config["telegramAPI"]['api_hash']
+session_name = config['telegramAPI']['session_name'
 
 # Inicia o client
-client = TelegramClient('some_name', api_id, api_hash)
+client = TelegramClient(session_name, api_id, api_hash)
 client.start()
 
 # Variaveis de controle
