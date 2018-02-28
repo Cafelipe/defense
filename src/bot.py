@@ -24,7 +24,7 @@ def defenseTime(chatTarget):
 
 
 def isWartime(datetime):
-    schedule = [0, 4, 8, 12, 16, 20]
+    schedule = [4, 12, 20]
 
     for val in schedule:
         if datetime.hour == val and datetime.minute >= random.randint(54, 58):
